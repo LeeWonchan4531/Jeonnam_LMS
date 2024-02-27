@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" href="/assets/img/icons/icon-152x152.png" />
+    <title>지원하지 않는 브라우저입니다.</title>
+    <!--아이폰 PWA-->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="전남고 LMS" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="전남고 LMS" />
+    <meta name="theme-color" content="#D3E1F8" />
+    <link rel="manifest" href="/manifest.json" />
+</head>
+
+<body>
+    <div class="error">
+        <h2>지원하지 않는 브라우저입니다.</h2>
+        <p><u>크롬, 사파리 브라우저</u>를 통해 접속해주세요.</p>
+    </div>
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            background-color: #D3E1F8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .error {
+            text-align: center;
+        }
+
+        .error h1 {
+            color: #333;
+            font-size: 3em;
+        }
+
+        .error p {
+            color: #666;
+        }
+
+        .error a {
+            display: inline-block;
+            color: #fff;
+            background-color: #007531;
+            padding: 10px 20px;
+            margin-top: 20px;
+            text-decoration: none;
+            border-radius: 12px;
+            transition: background-color 0.2s;
+            box-shadow: 12px 12px 24px 0px rgba(0, 0, 0, 0.2),
+                /* 어두운 그림자를 강화합니다. */
+                -12px -12px 24px 0px rgba(255, 255, 255, 0.5);
+            /* 밝은 그림자를 강화합니다. */
+        }
+
+        .error a:hover {
+            background-color: #025625;
+        }
+    </style>
+</body>

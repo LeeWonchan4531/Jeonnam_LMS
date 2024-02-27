@@ -1,0 +1,209 @@
+
+body {
+    background-color: #D3E1F8;
+    color: rgb(0, 0, 0);
+    animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    /* Firefox */
+    -webkit-animation: fadein 1s;
+    /* Safari and Chrome */
+    -o-animation: fadein 1s;
+    /* Opera */
+    margin-left: 7vw;
+    margin-right: 7vw;
+}
+
+
+/* CSS */
+.question {
+    display: none;
+    opacity: 0;
+  }
+  
+  .question.active {
+    display: block;
+    animation: fadeIn 1s;
+    opacity: 1;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+
+    /* Firefox */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+
+    /* Opera */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.question {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.question.active {
+    display: block;
+    opacity: 1;
+}
+
+.logo {
+    position: absolute; /* 위치를 절대값으로 설정합니다. */
+    top: 50%; /* 상단으로부터 50% 위치에 배치합니다. */
+    left: 50%; /* 왼쪽으로부터 50% 위치에 배치합니다. */
+    transform: translate(-50%, -50%); /* 위치를 조정하여 정확하게 중앙에 배치합니다. */
+    text-align: center;
+    width: 80%;
+    border-radius: 12px;
+    background: #f0f0f0;
+    box-shadow: 30px 30px 80px #cacaca, -30px -30px 80px #ffffff;
+    max-height: 100vh; /* 화면 높이를 최대 높이로 설정합니다. */
+    overflow-y: auto; /* 세로 방향으로 내용이 넘칠 경우 스크롤바를 생성합니다. */
+    max-width: 300px;
+    padding-bottom: 3vh;
+}
+
+.logo h2 {
+    text-align: left;
+    margin-left: 20px;
+}
+.alrml {
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-right: 20px;
+    color: rgb(86, 86, 86);
+    font-size: 13px;
+}
+
+
+.blue-button {
+    border-radius: 25px;
+    background: #007531; /* 파란색 배경을 설정합니다. */
+    box-shadow: 12px 12px 24px 0px rgba(0, 0, 0, 0.2), /* 어두운 그림자를 강화합니다. */
+               -12px -12px 24px 0px rgba(255, 255, 255, 0.5); /* 밝은 그림자를 강화합니다. */
+    padding: 15px 25px;
+    border: none;
+    font-size: 16px;
+    color: white; /* 글자색을 흰색으로 설정합니다. */
+    cursor: pointer;
+}
+
+.blue-button1 {
+    border-radius: 25px;
+    background: #007531; /* 파란색 배경을 설정합니다. */
+    box-shadow: 12px 12px 24px 0px rgba(0, 0, 0, 0.2), /* 어두운 그림자를 강화합니다. */
+               -12px -12px 24px 0px rgba(255, 255, 255, 0.5); /* 밝은 그림자를 강화합니다. */
+    padding: 15px 25px;
+    border: none;
+    font-size: 16px;
+    color: white; /* 글자색을 흰색으로 설정합니다. */
+    cursor: pointer;
+}
+
+
+.name {
+    width: 80%;
+    background-color: #ffffff;
+    padding: 5px;
+    color: #000000;
+    border: 1px solid #8b8b8b;
+    font-size: 18px;
+    margin-bottom: 2vh;
+    border-radius: 7px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer-container {
+    width: 100vw;
+    left: 0;
+    background-color: #f0f0f0;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 12px 12px 24px 0px rgba(0, 0, 0, 0.2), /* 어두운 그림자를 강화합니다. */
+    -12px -12px 24px 0px rgba(255, 255, 255, 0.5); /* 밝은 그림자를 강화합니다. */
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+.number {
+    width: 20%;
+    background-color: #ffffff;
+    padding: 5px;
+    color: #000000;
+    border: 1px solid #8b8b8b;
+    font-size: 18px;
+    margin-bottom: 2vh;
+    border-radius: 7px;
+}
+
+#cameraList {
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+#startButton {
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 5px;
+    border: 1px solid #8b8b8b ;
+}
+
+video {
+    object-fit: cover;
+    margin-top: 10px;
+    border-radius: 12px;
+
+}

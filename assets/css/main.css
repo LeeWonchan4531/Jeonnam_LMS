@@ -1,0 +1,100 @@
+body {
+    background-color: #D3E1F8;
+    color: rgb(0, 0, 0);
+}
+
+.logo {
+    position: absolute; /* 위치를 절대값으로 설정합니다. */
+    top: 50%; /* 상단으로부터 50% 위치에 배치합니다. */
+    left: 50%; /* 왼쪽으로부터 50% 위치에 배치합니다. */
+    transform: translate(-50%, -50%); /* 위치를 조정하여 정확하게 중앙에 배치합니다. */
+    text-align: center;
+    width: 80%;
+}
+
+.logo img {
+    border-radius: 50%;
+    background: #f0f0f0;
+    box-shadow: 30px 30px 80px #cacaca,
+               -30px -30px 80px #ffffff;
+    max-width: 300px;
+}
+
+.sub-title {
+    color: #72809A;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.go-start {
+    position: fixed; /* 위치를 고정합니다. */
+    bottom: 150px; /* 화면 하단으로부터 130px 떨어진 곳에 배치합니다. */
+    width: 100%; /* 너비를 100%로 설정하여 화면 전체에 걸쳐 배치합니다. */
+    display: flex; /* Flexbox 레이아웃을 시작합니다. */
+    justify-content: center; /* 가로 방향으로 중앙 정렬합니다. */
+}
+
+.blue-button {
+    border-radius: 25px;
+    background: #007531; /* 파란색 배경을 설정합니다. */
+    box-shadow: 12px 12px 24px 0px rgba(0, 0, 0, 0.2), /* 어두운 그림자를 강화합니다. */
+               -12px -12px 24px 0px rgba(255, 255, 255, 0.5); /* 밝은 그림자를 강화합니다. */
+    padding: 15px 25px;
+    border: none;
+    font-size: 16px;
+    color: white; /* 글자색을 흰색으로 설정합니다. */
+    cursor: pointer;
+}
+
+.footer-container {
+    width: 100vw;
+    left: 0;
+    background-color: #f0f0f0;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 12px 12px 24px 0px rgba(0, 0, 0, 0.2), /* 어두운 그림자를 강화합니다. */
+    -12px -12px 24px 0px rgba(255, 255, 255, 0.5); /* 밝은 그림자를 강화합니다. */
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+@keyframes fade-in-up {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.margin {
+    margin-left: 5vw;
+    color: #676c75;
+}
+
+.login {
+    position: fixed;
+    bottom: 105px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.login a {
+    text-decoration: underline;
+    color: black;
+
+}

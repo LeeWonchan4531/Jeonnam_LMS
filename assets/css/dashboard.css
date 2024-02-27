@@ -1,0 +1,301 @@
+body {
+    background-color: #e6ffc2;
+    color: #393939;
+    animation: fadein 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+header {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    color: #393939;
+    margin-bottom: 4vh;
+}
+
+header h2 {
+    margin-bottom: 1vh;
+}
+
+.card {
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow: 13px 13px 26px rgb(167, 192, 159),
+        -13px -13px 26px rgb(183, 205, 154);
+    padding: 15px;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    max-width: 400px;
+}
+
+.id-card {
+    border-radius: 30px 30px 20px 20px;
+    background: #e0e0e0;
+    box-shadow: 13px 13px 26px rgb(167, 192, 159),
+        -13px -13px 26px rgb(183, 205, 154);
+    padding-top: 15px;
+    padding: 0px;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    max-width: 400px;
+}
+
+.id-card h1 {
+    margin: 0;
+    color: #393939;
+    padding-top: 13px;
+    padding-bottom: 5px;
+    font-size: 1.9em;
+}
+
+.card h1 {
+    margin: 0;
+    color: #393939;
+    font-size: 1.9em;
+}
+
+.d-day {
+    justify-content: space-between;
+    display: flex;
+}
+
+.d-day p {
+    margin: 0;
+    font-weight: 600;
+}
+
+.margin-card-left {
+    padding-left: 30px;
+}
+
+.margin-card-right {
+    padding-right: 30px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.student-crad {
+    margin-top: 30px;
+}
+
+.card p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.food-card {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 5vh
+}
+
+
+.food-card-title {
+    margin-left: 4vw;
+    margin-bottom: 8px;
+}
+
+.food-title {
+    margin-left: 1vw;
+    font-size: 1.6em;
+    font-weight: 600;
+    border-bottom: 1px solid #757575;
+    margin-bottom: 10px;
+}
+
+.food-content {
+    margin-left: 1vw;
+}
+
+.student-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 6px;
+    color: white;
+    background-color: #007531;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.barcode-var {
+    margin: 0;
+    margin-top: -7px;
+    letter-spacing: 10px;
+    font-weight: 600;
+}
+
+.wow-card {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 3vh
+}
+
+.footer-container {
+    width: 100vw;
+    left: 0;
+    background-color: #f0f0f0;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 13px 13px 26px rgb(167, 192, 159),
+        -13px -13px 26px rgb(183, 205, 154);
+    padding-top: 13px;
+    padding-bottom: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* 글자가 로고의 바닥과 동일한 높이에 위치하도록 설정 */
+    height: 1.5em;
+    /* 글자 높이 만큼 설정 */
+}
+
+.logo-container {
+    position: relative;
+    bottom: -18px;
+    /* 로고를 위로 튀어나오게 설정 */
+}
+
+.logo {
+    width: 85px;
+    /* 로고의 크기를 조절하려면 이 값을 변경하세요 */
+    height: auto;
+    background: #F0F0F0;
+    border-radius: 50%;
+}
+
+.menu-item-left {
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+.menu-item-right {
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+footer {
+    margin-top: 5vh;
+    margin-bottom: 15vh;
+    text-align: center;
+    font-weight: 600;
+}
+
+table {
+    border-radius: 30px;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    border-style: hidden;
+    box-shadow: 0 0 0 1px #393939;
+}
+
+th,
+td {
+    border: 1px solid #393939;
+}
+
+.view {
+    width: 20%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blue-button {
+    border-radius: 25px;
+    background: #007531;
+    box-shadow: 12px 12px 24px 0px rgba(0, 0, 0, 0.2), /* 어두운 그림자를 강화합니다. */ -12px -12px 24px 0px rgba(255, 255, 255, 0.5);
+    height: 4vh;
+    margin-top: 30px;
+    margin-right: 20px;
+    border: none;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.article-title {
+    margin: 0;
+}
+
+.name {
+    width: 80%;
+    background-color: #ffffff;
+    padding: 5px;
+    color: #000000;
+    border: 1px solid #8b8b8b;
+    font-size: 18px;
+    margin-bottom: 2vh;
+    border-radius: 7px;
+}
+
+textarea {
+    width: 95%;
+    border: 1px solid #8b8b8b;
+    border-radius: 7px;
+    font-size: 15px;
+    min-height: 2rem;
+    overflow-y: hidden;
+    resize: none;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+input[type="file"] {
+    border: 1px solid #8b8b8b;
+    padding: 3px;
+    border-radius: 7px;
+    width: 175px;
+}
+
+.write-button {
+    border-radius: 25px;
+    background: #007531;
+    box-shadow: 12px 12px 24px 0px rgba(0, 0, 0, 0.2), /* 어두운 그림자를 강화합니다. */ -12px -12px 24px 0px rgba(255, 255, 255, 0.5);
+    height: 5vh;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.Kcal {
+    font-size: 16px;
+}
+
+.link {
+    text-align: left;
+    text-decoration: none;
+    color: #393939;
+}
